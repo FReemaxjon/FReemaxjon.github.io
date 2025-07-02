@@ -29,13 +29,13 @@
   <body>
     <div id="ar-container">
       <a-scene
-        mindar-image="imageTargetSrc: ./targets.mind; autoStart: true; uiLoading: yes; uiScanning: yes;"
+        mindar-image="imageTargetsSrc: ./targets.mind; autoStart: true; uiLoading: yes; uiScanning: yes;"
         vr-mode-ui="enabled: false"
         device-orientation-permission-ui="enabled: true"
         embedded
       >
         <!-- AR Camera -->
-        <a-entity mindar-image-target="targetIndex: 0">
+        <a-entity mindar-image-targets="targetIndex: 0">
           <!-- Simple Fireworks (a particle simulation or model) -->
           <a-entity
             particle-system="preset: default; particleCount: 2000; size: 0.1; color: #ffdd33, #ff3333, #33ccff"
